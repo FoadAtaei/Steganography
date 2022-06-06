@@ -136,6 +136,9 @@ class Steganography:
 
         return new_image
 
+# In this project for marge and unmerge your file; you should type the following inputs:
+# Merge : python main.py merge --img1=res/img1.jpg --img2=res/img2.jpg --output=res/output.png
+# Unmerge : python main.py unmerge --img=res/output.png --output=res/output2.png
 
 @click.group()
 def cli():
