@@ -36,6 +36,8 @@ class Steganography:
         return (int(r, 2),
                 int(g, 2),
                 int(b, 2))
+# The leftmost bit is the most significant bit. If we change the leftmost bit it will have a large impact on the final value.
+# On the other hand, the rightmost bit is the least significant bit. If we change the rightmost bit it will have less impact on the final value.
 
     @staticmethod
     def __merge_rgb(rgb1, rgb2):
