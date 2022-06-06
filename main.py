@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-# Author : https://github.com/FoadAtaei
+# Author : FOAD ATAEI
+# Email : f.138019.a@gmail.com
+# GitHub : https://github.com/FoadAtaei
+
 # In this project, one image can be merged into another image and the reverse can also be done
 
 import click
@@ -136,9 +139,12 @@ class Steganography:
 
         return new_image
 
+##############################################################################################
 # In this project for marge and unmerge your file; you should type the following inputs:
 # Merge : python main.py merge --img1=res/img1.jpg --img2=res/img2.jpg --output=res/output.png
 # Unmerge : python main.py unmerge --img=res/output.png --output=res/output2.png
+# END
+##############################################################################################
 
 @click.group()
 def cli():
