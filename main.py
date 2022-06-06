@@ -6,6 +6,7 @@
 import click
 from PIL import Image
 # To use the Steganography class in your Python code, you will need to use the Image module from the Pillow library
+# The output image from the merge operation and the input image for the unmerge operation must be in PNG format.
 
 class Steganography:
 
