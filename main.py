@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Author : FoadAtaei
+# Author : https://github.com/FoadAtaei
 # In this project, one image can be merged into another image and the reverse can also be done
 
 import click
@@ -9,6 +9,7 @@ from PIL import Image
 # The output image from the merge operation and the input image for the unmerge operation must be in PNG format.
 
 class Steganography:
+    # We will work with the RGB color model. The RGB color model has 3 channels, red, green and blue.
 
     @staticmethod
     def __int_to_bin(rgb):
@@ -21,6 +22,8 @@ class Steganography:
         return (f'{r:08b}',
                 f'{g:08b}',
                 f'{b:08b}')
+# So, each pixel from the image is composed of 3 values (red, green, blue) which are 8-bit values (the range is 0–255).
+# For each pixel we have three values, which can be represented in binary code.
 
     @staticmethod
     def __bin_to_int(rgb):
