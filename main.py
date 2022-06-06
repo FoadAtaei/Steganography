@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 
+# Author : FoadAtaei
+# In this project, one image can be merged into another image and the reverse can also be done
+
 import click
 from PIL import Image
-
+# To use the Steganography class in your Python code, you will need to use the Image module from the Pillow library
 
 class Steganography:
 
